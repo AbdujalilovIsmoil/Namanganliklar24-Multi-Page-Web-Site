@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,6 +35,14 @@
     />
     <meta name="og:image" content="./favicon/favicon.ico" />
     <meta name="og:site_name" content="Namanganliklar24" />
+    <!-- ***CDNJS LIBRARY*** -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- ****FONTS CSS**** -->
     <link rel="stylesheet" href="./css/fonts.css" />
     <!-- ****NORMALIZE CSS*** -->
@@ -44,7 +52,83 @@
     <title>Namanganliklar24</title>
   </head>
   <body>
-    
+    <!-- ****HEADER START**** -->
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="header__nav_container">
+            <div class="header__nav_container_box">
+              <h1 class="header__nav_container_box-title">NAMANGANLIKLAR24</h1>
+              <img
+                class="header__nav_container_box-img"
+                src="./img/logo/price.svg"
+                alt="price"
+                title="price"
+              />
+            </div>
+            <div class="header__nav_container_box">
+              <i class="fa fa-search"></i>
+              <div class="header__nav_container_box_language">
+                <img
+                  class="header__nav_container_box_language-img"
+                  src="./img/logo/language.jpg"
+                  alt="language"
+                  title="language"
+                />
+                <p class="header__nav_container_box_language-paragraph">Py</p>
+              </div>
+              <div class="header__nav_container_box_subscribe">
+                <a class="header__nav_container_box_subscribe_link" href="#">
+                  <i class="fab fa-telegram"></i>
+                  <p class="header__nav_container_box_subscribe-paragraph">
+                    Подписатся
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <ul class="header__nav_list">
+            <li class="header__nav_list_item">
+              <a class="header__nav_list_item-link" href="#"> Узбекистана </a>
+            </li>
+            <li class="header__nav_list_item">
+              <a class="header__nav_list_item-link" href="#"> Мир </a>
+            </li>
+            <li class="header__nav_list_item">
+              <a class="header__nav_list_item-link" href="#"> Экономика </a>
+            </li>
+            <li class="header__nav_list_item">
+              <a class="header__nav_list_item-link" href="#"> Политика </a>
+            </li>
+            <li class="header__nav_list_item">
+              <a class="header__nav_list_item-link" href="#"> Общество </a>
+            </li>
+            <li class="header__nav_list_item">
+              <a class="header__nav_list_item-link" href="#"> Технологии </a>
+            </li>
+            <li class="header__nav_list_item">
+              <a class="header__nav_list_item-link" href="#"> Спорт </a>
+            </li>
+            <li class="header__nav_list_item">
+              <a class="header__nav_list_item-link" href="#"> Культура </a>
+            </li>
+            <li class="header__nav_list_item">
+              <a class="header__nav_list_item-link" href="#"> Происшествия </a>
+            </li>
+            <li class="header__nav_list_item">
+              <a class="header__nav_list_item-link" href="#"> Туризм </a>
+            </li>
+          </ul>
+        </nav>
+        <img
+          class="header__nav-img"
+          src="./img/logo/banner.svg"
+          alt="banner"
+          title="banner"
+        />
+      </div>
+    </header>
+    <!-- ****HEADER END**** -->
     <script src="./js/index.js"></script>
   </body>
 </html>
