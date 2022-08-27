@@ -168,11 +168,11 @@ body {
   border-radius: 5px;
   padding: 8px 12px;
   gap: 10px;
-  transition: all .2s linear;
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  -o-transition: all .2s linear;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
   border: 1px solid var(--header-icon-bg-color);
 }
 
