@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *,
 *::after,
 *::before {
@@ -41,10 +48,11 @@ body {
   --main-text-color: #202020;
   --main-paragraph-color: #6B6D97;
   --main-bg-btn-color: #FE5C28;
+  --section-date-color: #7688A4;
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1240px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
@@ -411,6 +419,7 @@ body {
 .main__following_box-link {
   background: (linear, left top, right top, (#FE5C28), (88.43%, rgba(255, 139, 54, 0.9)));
   background: -o-linear-gradient(left, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+  background: -webkit-gradient(linear, left top, right top, from(#FE5C28), color-stop(88.43%, rgba(255, 139, 54, 0.9)));
   background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
   border-radius: 5px;
   border: none;
@@ -432,3 +441,108 @@ body {
 }
 
 /* ****MAIN END**** */
+
+/* ****SECTION START**** */
+
+.section__container-title {
+  margin: 38px 0 13px 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--main-span-color3);
+}
+
+.section__container_small {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto);
+  grid-template-columns: repeat(2, auto);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* gap: 10px; */
+}
+
+.section__container_small_list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin: 18px 0;
+}
+
+.section__container_small_list_item_box-img {
+  border-radius: 5px;
+  height: 143px;
+  width: 252px;
+}
+
+.section__container_small_list_item_box-title {
+  max-width: 435px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: var(--main-text-color);
+}
+
+.section__container_small_list_item_box-paragraph {
+  max-width: 490px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 8px 0 12px 0;
+}
+
+.section__container_small_list_item_box_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.section__container_small_list_item_box_date-img {
+  height: 20px;
+  width: 18px;
+}
+
+.section__container_small_list_item_box_date-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--section-date-color);
+}
+
+.section__container_small_aside_list {
+  background-color: var(--header-bg-color);
+  max-width: 386px;
+  width: 100%;
+  height: 542px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.section__container_small_aside_list_item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--main-text-color);
+}
+
+.section__container_small_aside_list_item-paragraph {
+  max-width: 347px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: var(--main-text-color);
+}
+
+/* ****SECTION END**** */
