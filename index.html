@@ -52,6 +52,24 @@
     <title>Namanganliklar24</title>
   </head>
   <body>
+    <!-- ****MODAL START**** -->
+    <div class="modal">
+      <div class="modal__container">
+        <i data-close class="fa fa-times"></i>
+        <h3 class="modal__container-title">
+          Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых
+          последних новостей:
+        </h3>
+        <a class="modal__container_link" href="#">
+          <i class="fab fa-telegram"></i>
+          <p class="modal__container-paragraph">
+            Подписатся
+          </p>
+        </a>
+      </div>
+    </div>
+    <!-- ****MODAL END**** -->
+
     <!-- ****HEADER START**** -->
     <header class="header">
       <div class="container">
@@ -78,7 +96,7 @@
                 <p class="header__nav_container_box_language-paragraph">Py</p>
               </div>
               <div class="header__nav_container_box_subscribe">
-                <a class="header__nav_container_box_subscribe_link" href="#">
+                <a data-open class="header__nav_container_box_subscribe_link" href="#">
                   <i class="fab fa-telegram"></i>
                   <p class="header__nav_container_box_subscribe-paragraph">
                     Подписатся
