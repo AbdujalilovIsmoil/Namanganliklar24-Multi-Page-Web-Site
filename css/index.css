@@ -40,6 +40,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *,
 *::after,
 *::before {
@@ -50,6 +57,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -80,6 +88,14 @@ body {
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
 }
 
 /* ****HEADER START**** */
@@ -689,7 +705,7 @@ body {
 
 /* ****FOOTER START**** */
 .footer {
-  height: 225px;
+  height: 245px;
   width: 100%;
   background-color: var(--header-title-color);
   padding: 40px 0 0 0;
@@ -706,6 +722,20 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+}
+
+.footer__logo_container::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: var(--footer-link-color);
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
 }
 
 .footer__logo_container_box {
@@ -784,6 +814,39 @@ body {
 
 .footer__logo_container_subscribe i {
   color: var(--footer-link-color);
+}
+
+.footer__list_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto);
+  grid-template-columns: repeat(3, auto);
+  margin: 35px 0 0 0;
+}
+
+.footer__list_container_list_item-paragraph {
+  max-width: 365px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--header-icon-bg-color);
+  margin: 10px 0;
+}
+
+.footer__list_container_list_item {
+  padding: 5px 0;
+}
+
+.footer__list_container_list_item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--header-icon-bg-color);
+}
+
+.footer__list_container_list_item-link:hover {
+  text-decoration: underline;
 }
 
 /* ****FOOTER END**** */
