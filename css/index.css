@@ -88,6 +88,7 @@ body {
   --section-date-border-color: #E4E4E4;
   --section-contact-color: #333333;
   --footer-link-color: #133C82;
+
 }
 
 .container {
@@ -593,6 +594,19 @@ body {
 /* ****MAIN END**** */
 
 /* ****SECTION START**** */
+
+.section__container_links{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 10px;
+}
+
+.section__container-link{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: ---;
+}
 
 .section__container-title {
   margin: 38px 0 13px 0;
