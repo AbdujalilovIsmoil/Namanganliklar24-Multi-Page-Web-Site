@@ -661,6 +661,12 @@ body {
   margin: 0 5px;
 }
 
+.section__container_small_box-img {
+  height: 379px;
+  max-width: 794px;
+  width: 100%;
+}
+
 /* ****SECTION END**** */
 
 /* ****FOOTER START**** */
@@ -1270,6 +1276,7 @@ body {
 }
 
 @media only screen and (max-width: 825px) {
+
   .main__list_item-img {
     height: 375px;
     max-width: 700px;
@@ -1349,6 +1356,12 @@ body {
     padding: 40px 0 0 0;
     margin: 130px 0 0 0;
   }
+
+  .section__container_small_box-img {
+    height: 379px;
+    width: 700px;
+    object-fit: cover;
+  }
 }
 
 @media only screen and (max-width: 740px) {
@@ -1365,6 +1378,14 @@ body {
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .section__container_small_box-img {
+    height: 379px;
+    width: 600px;
+    object-fit: cover;
   }
 }
 
@@ -1453,6 +1474,12 @@ body {
 }
 
 @media only screen and (max-width: 625px) {
+  .section__container_small_box-img {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+  }
+
   .section__container_small_aside_list_item-link {
     padding: 10px 32px;
     background-color: var(--header-title-color);
@@ -1536,6 +1563,12 @@ body {
 }
 
 @media only screen and (max-width: 530px) {
+  .section__container_small_box-img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+  }
+
   .main__list_item-title {
     font-weight: 600;
     font-size: 24px;
@@ -1708,6 +1741,31 @@ body {
 }
 
 @media only screen and (max-width: 425px) {
+  .section__container_small_box-img {
+    height: 225px;
+    width: 350px;
+    object-fit: cover;
+  }
+
+  .section__container_small_box-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--main-span-color3);
+  }
+
+  .section__container_small_list_item_box_date-paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--section-date-color);
+  }
+
+  .section__container_small_list_item_box_date-img {
+    height: 29px;
+    width: 20px;
+  }
+
   .main__list_item-img {
     height: 175px;
     max-width: 325px;
@@ -1864,7 +1922,23 @@ body {
 
 }
 
+@media only screen and (max-width: 414px) {
+  .section__container_small_box-img {
+    height: 225px;
+    max-width: 385px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 @media only screen and (max-width: 410px) {
+  .section__container_small_box-img {
+    height: 225px;
+    max-width: 385px;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .section__container_small_aside_list_item_paragraph-date {
     font-weight: 400;
     font-size: 14px;
@@ -2053,7 +2127,50 @@ body {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .section__container_small_box-img {
+    height: 225px;
+    max-width: 320px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .header__nav_list {
+    height: 68px;
+    width: 300px;
+    background-color: var(--header-icon-bg-color);
+    -webkit-box-shadow: 0px 2px 5px rgb(159 159 159 / 19%);
+    box-shadow: 0px 2px 5px rgb(159 159 159 / 19%);
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .section__container_small_box-img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+  }
+}
+
 @media only screen and (max-width: 360px) {
+  .section__container_small_box-img {
+    height: 200px;
+    max-width: 320px;
+    width: 100%;
+    object-fit: cover;
+}
   .modal__container-title {
     max-width: 678px;
     margin: 0 auto;
@@ -2092,7 +2209,7 @@ body {
 
   .header__nav_list {
     height: 68px;
-    width: 320px;
+    width: 290px;
     background-color: var(--header-icon-bg-color);
     -webkit-box-shadow: 0px 2px 5px rgb(159 159 159 / 19%);
     box-shadow: 0px 2px 5px rgb(159 159 159 / 19%);
@@ -2107,6 +2224,7 @@ body {
     -ms-flex-pack: space-evenly;
     justify-content: space-between;
     padding: 0 20px;
+    margin: 0 auto;
   }
 
   .fa-search {
