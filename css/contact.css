@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  position: relative;
 }
 
 :root {
@@ -813,6 +814,49 @@ body {
 
 .footer__list_container_list_item-link:hover {
   text-decoration: underline;
+}
+
+#cursor {
+  position: absolute;
+  border: 4px dashed var(--header-title-color);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateX(-50%), translateY(-50%);
+  -webkit-transform: translateX(-50%), translateY(-50%);
+  -moz-transform: translateX(-50%), translateY(-50%);
+  -ms-transform: translateX(-50%), translateY(-50%);
+  -o-transform: translateX(-50%), translateY(-50%);
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  animation: animate 1s linear infinite;
+  -webkit-animation: animate 2s linear infinite;
+  z-index: 3;
+}
+
+@keyframes animate {
+  to {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
 
 /* ****FOOTER END**** */

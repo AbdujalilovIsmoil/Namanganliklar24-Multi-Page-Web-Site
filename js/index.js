@@ -39,4 +39,13 @@ this.addEventListener("DOMContentLoaded", () => {
       closeModal();
     }
   });
+
+  let cursor = document.querySelector("#cursor");
+  this.addEventListener("mousemove", (e) => {
+    let x = e.clientX;
+    let y = e.clientY;
+    cursor.style.left = x + "px";
+    cursor.style.top = y + "px";
+    body.style.overflow = "hidden";
+  });
 });
