@@ -116,11 +116,29 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  display: none;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
 }
 
 .modal.active {
-  display: block;
+  transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
 }
 
 .modal__container {
@@ -595,13 +613,13 @@ body {
 
 /* ****SECTION START**** */
 
-.section__container_links{
+.section__container_links {
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: repeat(3, auto);
   gap: 10px;
 }
 
-.section__container-link{
+.section__container-link {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -974,6 +992,49 @@ body {
 }
 
 /* ****FOOTER END**** */
+
+#cursor {
+  position: fixed;
+  border: 4px dashed var(--header-title-color);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateX(-50%), translateY(-50%);
+  -webkit-transform: translateX(-50%), translateY(-50%);
+  -moz-transform: translateX(-50%), translateY(-50%);
+  -ms-transform: translateX(-50%), translateY(-50%);
+  -o-transform: translateX(-50%), translateY(-50%);
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  animation: animate 1s linear infinite;
+  -webkit-animation: animate 2s linear infinite;
+  z-index: 3;
+}
+
+@keyframes animate {
+  to {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
 
 /* ****RESPONSIVE START**** */
 @media only screen and (max-width: 1165px) {
@@ -1412,6 +1473,10 @@ body {
 
 @media only screen and (max-width: 880px) {
   .header__nav_container_box-img {
+    display: none;
+  }
+
+  #cursor {
     display: none;
   }
 }
