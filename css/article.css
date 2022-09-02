@@ -1334,7 +1334,8 @@ body {
   .header__nav_container_box-img {
     display: none;
   }
-  #cursor{
+
+  #cursor {
     display: none;
   }
 }
