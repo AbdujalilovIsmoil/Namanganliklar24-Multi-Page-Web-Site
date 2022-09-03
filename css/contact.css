@@ -1127,6 +1127,7 @@ body {
   -moz-transition: all .3s linear;
   -ms-transition: all .3s linear;
   -o-transition: all .3s linear;
+  color: var(--footer-link-color);
 }
 
 .footer__logo_container_subscribe:hover {

@@ -1074,6 +1074,7 @@ body {
   -moz-transition: all .3s linear;
   -ms-transition: all .3s linear;
   -o-transition: all .3s linear;
+  color: var(--footer-link-color);
 }
 
 .footer__logo_container_subscribe:hover {
@@ -1116,6 +1117,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: var(--header-icon-bg-color);
+
 }
 
 .footer__list_container_list_item-link:hover {
