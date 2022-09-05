@@ -1492,6 +1492,13 @@ body {
     height: 100%;
     width: 985px;
   }
+  .footer {
+    height: 270px;
+    width: 100%;
+    background-color: var(--header-title-color);
+    padding: 40px 0 0 0;
+    margin: 100px 0 0 0;
+}
 }
 
 

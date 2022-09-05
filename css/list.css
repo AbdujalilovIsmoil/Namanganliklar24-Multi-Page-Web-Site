@@ -1337,6 +1337,16 @@ body {
 
 }
 
+@media only screen and (max-width: 1024px) {
+  .footer {
+    height: 270px;
+    width: 100%;
+    background-color: var(--header-title-color);
+    padding: 40px 0 0 0;
+    margin: 100px 0 0 0;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .footer__logo_container {
     display: -webkit-box;

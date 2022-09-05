@@ -1345,7 +1345,7 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .footer {
-    height: 245px;
+    height: 270px;
     width: 100%;
     background-color: var(--header-title-color);
     padding: 40px 0 0 0;
@@ -1398,6 +1398,7 @@ body {
     width: 100%;
     object-fit: cover;
   }
+
   .footer__logo_container::after {
     content: "";
     position: absolute;
@@ -1409,7 +1410,7 @@ body {
     -moz-transform: translateY(45px);
     -ms-transform: translateY(45px);
     -o-transform: translateY(45px);
-}
+  }
 }
 
 @media only screen and (max-width: 1000px) {

@@ -1254,12 +1254,12 @@ body {
   }
 
   .footer {
-    height: 245px;
+    height: 270px;
     width: 100%;
     background-color: var(--header-title-color);
     padding: 40px 0 0 0;
     margin: 100px 0 0 0;
-  }
+}
 }
 
 @media only screen and (max-width: 1000px) {
